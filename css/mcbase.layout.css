@@ -1,0 +1,148 @@
+
+/* hide any HRs used in the layout, but show them in main content */
+hr,
+.ahem,
+#skip-link {
+  display: none;
+}
+#content hr {
+  display: block;
+}
+
+/* uncomment these color rules to make the layout easier to see */
+/*
+#main           { background: #ccc; }
+#content        { background: #eee; }
+#sidebar-first  { background: #ccf; }
+#sidebar-second { background: #fcc; }
+#navigation     { background: #ffc; }
+#header         { background: #cff; }
+#footer         { background: #cfc; }
+*/
+
+/**
+ * Holy Grail Layout =================================================
+ *
+ * ref: http://www.alistapart.com/articles/holygrail
+ * This layout takes advantage of negative margins to float the sidebars to
+ * either side of the main content. It also floats the navigation above the
+ * content, but you could just as easily absolutely position it.
+ * 
+ * LC stands for Left Column, RC for Right Column
+ * 
+ * Obvously, this layout is for left-to-right languages. For a
+ * right-to-left layout, just swap all the left and rights below.
+ */
+   
+   
+#page-wrapper, #page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Page width limiter =================================================
+ *
+ * Can be nested within major structural elements to allow full-width
+ * bleeds combined with a fixed page width. Set a width on this in your
+ * theme to get a consistent page width on major elements.
+ *
+ * See also the dimensions defined by the responsive design requirements
+ */
+ 
+.limiter { 
+  width: 960px;
+  margin: 0 auto;
+  }
+
+#content,
+#sidebar-first,
+#sidebar-second {
+  float: left;
+}
+
+/**
+ * Source ordered Navigation =============================================
+ *
+ * If required, the navigation can be placed after the main content and then
+ * positioned absolutely above the content. Space can be generated between
+ * header and content to accommodate the menu using these declarations..
+ * 
+ */
+
+/*
+
+.with-navigation #content,
+.with-navigation #sidebar-first,
+.with-navigation #sidebar-second {
+  margin-top: 3em;       
+}
+#navigation {
+  height: 3em;           
+  width: 100%;
+  position: absolute;
+}
+#navigation h2 {
+  margin: 0;
+}
+*/
+
+#main {
+position: relative;
+/*margin-top: 3em;*/
+/* Add this margin to accommodate the absolutely positioned menu above */
+}
+
+
+#content {
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  padding: 0;
+}
+
+.no-sidebars #content {
+  float: none;
+}
+
+.sidebar-first #content .section {
+  margin-left: 320px;     /* LEFT value */
+}
+
+.sidebar-second #content .section {
+  margin-right: 320px;    /* RIGHT value */
+}
+
+.two-sidebars #content .section {
+  margin-left: 320px;     /* LEFT value */
+  margin-right: 320px;    /* RIGHT value */
+}
+
+#sidebar-first {
+  width: 320px;           /* LEFT value */
+	margin-right: -320px;   /* negative LEFT value */
+  margin-left: 0;
+}
+#sidebar-second {
+  width: 320px;          /* RIGHT value */
+  margin-left: -320px;    /* negative RIGHT value */
+  float: right;
+  margin-right: 0;
+}
+
+
+/** Columns inner
+---------------------------------
+*  You can change the padding inside the columns without changing the
+*  width of them by just using the INNER div of each column
+*/
+
+.inner {
+/* 	padding: 0px 10px; */
+}
+
+
+#footer {
+  clear: both;
+}

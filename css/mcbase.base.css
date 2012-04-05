@@ -1,0 +1,651 @@
+/**
+ * Base styles.
+ * Provides sensible defaults for everything to save you time. Override
+ * with an empty stylesheet to start over from scratch.
+ */
+ 
+ input,
+select,
+textarea,
+body { 
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  color: #333;
+}
+
+
+/**
+ * Skip navigation ====================================================
+ */
+#skip-link {
+  position:absolute;
+  display:block;
+  }
+
+#skip-link a,
+#skip-link a:link,
+#skip-link a:visited {
+  position:absolute;
+  display:block;
+  left:-10000px;
+  width:1px;
+  height:1px;
+  }
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  position:static;
+  width:auto;
+  height:auto;
+  }
+
+
+/**
+ * Links ==============================================================
+ *
+ * Any ul.links are given a horizontal tab-like formatting.
+ */
+ul.links li, ul.tabs li,
+ul.links li a, ul.tabs li a { float:left; }
+
+ul.links.inline,
+ul.links.inline li,
+ul.links.inline li a {
+  float:none;
+  display:inline;
+}
+  
+.links li a, .tabs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/**
+ * Content Typography ==============================================================
+ *
+ */
+ 
+ 
+ 
+#content .node { line-height: 1.475em; }
+
+.node p,
+.node ul,
+.node ol,
+.node dl,
+.node pre,
+.node div.codeblock,
+.node blockquote 
+{ 
+  margin: 0px 0px 1.475em; 
+/*   margin: 0px 0px .875em;  */
+}
+
+.node dd + dt {
+  margin-top: 1.475em;
+}
+
+.node h1,
+.node h2,
+.node h3,
+.node h4,
+.node h5,
+.node h6 { 
+  font-weight:bold;
+  margin: 0;
+}
+
+.node h1 a,
+.node h2 a,
+.node h3 a,
+.node h4 a,
+.node h5 a,
+.node h6 a { 
+  color: inherit;
+  text-decoration: none;
+}
+
+.node pre,
+.node code,
+.node div.codeblock {
+  font-family: monospace;
+  }
+
+.node pre,
+.node blockquote,
+.node div.codeblock {
+  line-height:1.475em;
+  background:#f8f8f8;
+  padding:4px 9px;
+  border:1px solid #eee;
+  border-left:5px solid #eee;
+  }
+
+.node ol li,
+.node ul li {
+  display:list-item;
+  margin:0px 0px 0px 20px;
+  padding:0px;
+  }
+
+.node ol, .node ol li {
+  list-style: decimal;
+  }
+
+.node ol ol, .node ol ol li {
+  list-style: lower-latin;
+  }
+
+.node ol ol ol, .node ol ol ol li {
+  list-style: lower-roman;
+  }
+
+
+.node ol li { list-style:decimal; }
+
+.node ul li { list-style:disc; }
+
+.node img { display:block; }
+
+/* Excluding Drupal structures */
+.node .links,
+.node .links li,
+.node .item-list ul,
+.node .item-list li {
+  margin:0px;
+  padding:0px;
+  list-style:none;
+  }
+
+
+
+
+/* Testing in styleguide */
+
+div.styleguide { line-height: 1.375em; }
+
+div.styleguide p,
+div.styleguide ul,
+div.styleguide ol,
+div.styleguide pre,
+div.styleguide div.codeblock,
+div.styleguide blockquote { margin: 0px 0px 1.375em; }
+
+div.styleguide h1,
+div.styleguide h2,
+div.styleguide h3,
+div.styleguide h4,
+div.styleguide h5,
+div.styleguide h6 { 
+  margin: 0;
+  font-weight:bold; 
+}
+
+div.styleguide pre,
+div.styleguide code,
+div.styleguide div.codeblock {
+  font-family: monospace;
+  }
+
+div.styleguide pre,
+div.styleguide blockquote,
+div.styleguide div.codeblock {
+  line-height:1.375em;
+  background:#f8f8f8;
+  padding:4px 9px;
+  border:1px solid #eee;
+  border-left:5px solid #eee;
+  }
+
+div.styleguide ol li,
+div.styleguide ul li {
+  display:list-item;
+  margin:0px 0px 0px 30px;
+  padding:0px;
+  }
+
+div.styleguide ol li { list-style:decimal; }
+
+div.styleguide ul li { list-style:disc; }
+
+div.styleguide img { display:block; }
+
+
+
+/**
+ * Tables =============================================================
+ */
+table {
+  width: 100%;
+  margin: 0 0 20px;
+  border-collapse: collapse;
+  }
+  
+th, td {
+  padding: 5px 10px;
+}
+
+thead {
+  background-color: #777;
+  color: #fff;
+}
+
+thead th {
+  border-bottom: none;
+}
+
+th, td { vertical-align: top; }
+
+/**
+ * Forms ==============================================================
+ */
+input.form-text,
+select,
+textarea { border:1px solid #ccc; }
+
+input.form-submit,
+label { font-weight:bold; }
+
+input.form-submit { cursor:pointer; }
+
+input.form-radio,
+input.form-checkbox { vertical-align:middle; }
+
+.form-item .description,
+.description {
+  color:#666;
+/*   font-size:11px; */
+  }
+
+fieldset.collapsible .fieldset-title { cursor:pointer; }
+html.js fieldset.collapsed .fieldset-content { display:none; }
+
+/**
+ * Views ==============================================================
+ */
+table.grid-2 td { width:50%; }
+table.grid-3 td { width:33.3%; }
+table.grid-4 td { width:25%; }
+table.grid-5 td { width:20%; }
+table.grid-6 td { width:16.6%; }
+table.grid-7 td { width:14.2%; }
+table.grid-8 td { width:12.5%; }
+
+
+/**
+ * Some Mediachrome defaults 
+ *
+ *
+ */
+
+a.button,
+input.form-submit,
+input.teaser-button,
+input[type=button] {
+  background-color: #3ca1dc;
+  border: 1px solid #3ca1dc;
+  padding: 4px 12px;
+  margin: 10px 5px 10px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url(graphics/button-bg-v2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  -webkit-box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+  -moz-box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+  -o-box-shadow: rgba(0,0,0,0.5) 3px 3px 3px;
+  box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+  text-shadow: rgba(255,255,255,1) 1px 1px 2px;
+  font-weight: normal;
+}
+
+input[disabled] {
+  background-image: none;
+  background-color: #ededed;
+  border: 1px solid #ededed;
+}
+
+/* Views uses little buttons in some of its dialogues */
+#views-ajax-pad .form-buttons .form-submit {
+  font-size: 0.8em;
+  padding: 2px 5px;
+}
+
+input#edit-preview {
+  background-position: -250px center;
+  border-color: #98e893;
+}
+
+input#edit-delete, input#edit-remove {
+  background-position: -500px center;
+  border-color: #f54857;
+}
+
+input#edit-cancel {
+  background-position: -750px center;
+  border-color: #ddd;
+}
+
+a.button:hover,
+input.form-submit:hover,
+input.teaser-button:hover,
+input[type=button]:hover,
+input#edit-preview:hover,
+input#edit-delete:hover {
+  border: 1px solid #000;
+  color: #000;
+}
+
+a.button:active,
+input.form-submit:active,
+input.teaser-button:active,
+input[type=button]:active,
+input#edit-preview:active,
+input#edit-delete:active {
+  border: 1px solid #000;
+  color: #000;
+  -webkit-box-shadow:rgba(0,0,0,0.5) 1px 1px 3px;
+  -moz-box-shadow:rgba(0,0,0,0.5) 1px 1px 3px;
+  box-shadow:rgba(0,0,0,0.5) 1px 1px 3px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+input[disabled]:hover {
+  background-color: #ededed;
+  border: 1px solid #ededed;
+  color: #666;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+  -moz-box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+  box-shadow:rgba(0,0,0,0.5) 3px 3px 3px;
+}
+
+
+/* Local tasks tabs */
+
+.tabs {
+  background-color: transparent;
+}
+
+.tabs ul.primary {
+  padding: 10px 10px 0;
+  margin-bottom: 5px;
+  background-color: #cdcdcd;
+}
+
+
+.tabs ul.primary li {
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 3px 9px 2px;
+  margin: 5px 5px 0 0;
+  border: 1px solid #cdcdcd;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: -1px;
+}
+
+.tabs ul.primary li.active {
+  background-color: #fff;
+}
+
+.tabs ul.primary li.active a {
+  background-color: transparent;
+}
+
+.tabs ul.primary li:hover {
+  background-color: #555;
+  color: #eee;
+}
+
+.tabs ul.primary li:hover a {
+  color: #eee;
+}
+
+.tabs ul.primary li.active:hover {
+  background-color: #fff;
+}
+
+.tabs ul.primary li.active:hover a {
+  color: #222;
+}
+
+
+
+.tabs ul.secondary {
+  margin: 5px 10px;
+}
+
+/* tabs keyline */
+
+.tabs ul.primary li {
+  border: 1px solid #cdcdcd;
+  margin-bottom: -1px;
+}
+
+.tabs ul.primary, .tabs ul.primary li {
+  border-bottom: 1px solid #aaa;
+}
+
+.tabs ul.primary li.active {
+  border: 1px solid #aaa;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+/*line up form checkboxes horizontally for selected forms*/
+/*
+
+#user-register .form-checkboxes .form-item,
+#node-form .form-checkboxes .form-item {
+  width: 180px;
+  float: left;
+  clear: none;
+}
+
+.description {
+  clear: left;
+}
+
+#user-register .form-checkboxes, 
+#node-form .form-checkboxes {
+  overflow: auto;
+}
+*/
+
+/* Use standard image classes  */
+
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+
+/**
+ * If tinymce uses this theme it will attempt to fill 
+ * the body of the text editor with the body 
+ * background values - must override! 
+ */
+ 
+body#tinymce {
+  background-color: #efefef !important;
+  background-image: none !important;
+}
+
+
+/* Messages */
+
+div.messages {
+  margin: 10px 0;
+}
+
+div.status {
+  background-color: #CDFFD1;
+}
+
+div.help {
+  background-color: #D2D9FF;
+}
+
+div.notice {
+  background-color: #FFFDB5;
+}
+
+div.error {
+  background-color: #FCC;
+  border: none;
+}
+
+tr.error {
+  background-color: #FCC;
+  color: #333;
+}
+
+/**
+ * @file
+ * Form styles.
+ */
+
+/* General */
+
+.description {
+  color: #999;
+}
+
+/* Fieldsets */
+
+fieldset .fieldset-legend {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  margin-top: 1em;
+  padding-left: 15px;
+  position: absolute;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 3em 0 0;
+  position: relative;
+  margin: 1em 0;
+}
+
+fieldset .fieldset-wrapper {
+  padding: 0 15px 10px;
+}
+
+html.js fieldset.collapsed {
+  border-width: 1px;
+  height: auto;
+}
+
+fieldset.collapsed {
+  background-color: transparent;
+}
+
+a.fieldset-title {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+
+/* Menus */
+
+.menu {
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+/* Search Block */
+
+#search-block-form {
+	border: 1px solid #aaa;
+	padding: 0;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-o-border-radius: 13px;
+	border-radius: 13px;
+  width: 200px;
+}
+
+#search-block-form input {
+	border: 0;
+	display: inline;
+	padding: 5px;
+	height: 18px;
+	line-height: 18px;
+	margin: 0;
+	vertical-align: middle;
+}
+
+#search-block-form .form-text {
+	width: 140px;
+	margin-left: 10px;
+	color: #aaaaaa;
+}
+
+
+#search-block-form .form-submit {
+  background-image: none;
+  background-color: transparent;
+  height: 18px;
+  width: 18px;
+  margin: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+#search-block-form .form-submit:hover {
+  background-image: none;
+  background-color: transparent;
+}
+
+#search-block-form .form-submit:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  top: 0;
+  left: 0;
+}
+
