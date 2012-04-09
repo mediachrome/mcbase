@@ -196,15 +196,15 @@
 
 <footer id="footer" role="contentinfo"><div class="limiter">
 
-<div id="footer-second" class="clearfix">
+<div id="footer-second"  class="footer-block">
 <?php print render($page['footer_second']); ?>
 </div>
 
-<div id="footer-third">
+<div id="footer-third"  class="footer-block">
 <?php print render($page['footer_third']); ?>
 </div>
 
-<div id="footer-fourth">
+<div id="footer-fourth" class="footer-block clearfix">
 <?php print render($page['footer_fourth']); ?>
 </div>
 
