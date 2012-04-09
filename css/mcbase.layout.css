@@ -146,3 +146,19 @@ position: relative;
 #footer {
   clear: both;
 }
+
+#footer .limiter {
+  padding: 0;
+}
+
+.footer-block {
+  width: 310px;
+  float: left;
+}
+
+/* Demo regions on the blocks page */
+
+.page-admin-structure-block-demo .region {
+  margin: -1px;
+  border: 1px solid lime;
+}
