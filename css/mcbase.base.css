@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /**
  * Skip navigation ====================================================
  */
@@ -649,3 +650,8 @@ a.fieldset-title {
   left: 0;
 }
 
+/* Admin menu font size override */
+
+#admin-menu {
+  font-size: 10px;
+}
