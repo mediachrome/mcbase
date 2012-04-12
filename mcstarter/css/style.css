@@ -1,0 +1,187 @@
+/* $Id: style.css $ */
+
+
+ input,
+select,
+textarea,
+body { 
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  color: #333;
+}
+
+/* background images for columns */
+
+.sidebar-first #main-wrapper .limiter, .two-sidebars #main-wrapper .limiter {
+/* background: #fff url(graphics/sidebar-left-bg.png) repeat-y left top; */
+}
+
+.two-sidebars #main .limiter, .sidebar-second #main .limiter{
+/* background: url(graphics/sidebar-right-bg.png) repeat-y right top; */
+}
+
+
+#navigation .limiter {
+  background-color: #fff;
+}
+
+#page .limiter {
+background-color: #fff;
+}
+
+#content .inner{
+background-color: #fff;
+padding-bottom: 50px;
+/* margin-top: -10px; */
+}
+
+/* standard 'Clean' link colours overrides*/
+
+a:link {
+  color: #003b89;
+}
+
+a:visited {
+  color: #003b89;
+}
+
+a:hover {
+  color: #007ee4;
+}
+
+a:visited:hover {
+  color: #007ee4;
+}
+
+a:focus {
+  color: #000;
+}
+
+/* Header 
+-------------------------------------------*/
+
+#header .limiter {
+  background: #b8d6b8;
+}
+
+
+#header .block-menu {
+float: left;
+margin: 0 0 10px;
+}
+
+
+#header #search-theme-form {
+float: right;
+
+}
+
+/* Navigation
+-------------------------------------------*/
+#navigation {
+}
+
+#navigation h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+}
+
+#main-menu {
+  background-color: #9eb2ab;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+#main-menu li  {
+  float: left;
+}
+
+
+#main-menu li a {
+  color: #000;
+  padding: 3px 5px;
+  background-color: #9eb2ab;
+}
+
+#main-menu li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+#navigation .breadcrumb {
+  padding: 10px 20px;
+}
+
+
+
+
+/* Content theming 
+-------------------------------------------*/
+
+
+#content div.content-margin {
+  margin: 0 20px;
+}
+
+#frontpage .node-page-page {
+  margin: 0;
+}
+
+div.node-content {
+  margin-bottom: 20px;
+}
+
+h1.page-title {
+  margin: 20px 0 0.5em 0;
+}
+
+/* forms */
+
+div.node-webform-page form {
+padding: 10px;
+background-color: #ddebf3;
+}
+
+/* Bottom */
+
+#bottom .limiter, #footer .limiter {
+  background-color: #444;
+  color: #fff;
+}
+
+#bottom p, #bottom a {
+color: #fff;
+}
+
+/* Images */
+
+img.offsetleft {
+  margin-left: -30px;
+  }
+
+img.offsetright {
+  margin-right: -30px;
+  }
+
+div.status {
+  background-color: #fff;
+}
+
+#footer .limiter {
+  border-top: 1px solid #777;
+}
+
+/* Registration */
+
+#user-register .form-item {
+  padding: 5px;
+  background-color: #efefef;
+  margin-bottom: 5px;
+}
+
+#user-register .form-item .form-item{
+  padding: 0;
+  margin: 0;
+}
+

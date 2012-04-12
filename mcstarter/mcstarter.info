@@ -1,0 +1,21 @@
+name = Mediachrome starter
+description = Mediachrome starter theme
+base theme = mcbase
+core = 7.x
+
+screenshot = images/screenshot.png
+
+; stylesheets[screen][] = css/layout.css
+stylesheets[screen][] = css/style.css
+
+regions[header] = Header
+regions[branding] = Branding
+; regions[navigation] = Navigation
+regions[content] = Content
+regions[highlighted] = Highlighted
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[help] = Help
