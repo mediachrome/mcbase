@@ -8,11 +8,10 @@ body {
 #mcbase-grid {
   position: fixed;
   left: 50%;
-  z-index: -1;
   margin-left: -480px;
   width: 960px;
   height: 100%;
-background: transparent url(graphics/grid.png) repeat-y center top;
+  background: transparent url(graphics/grid.png) repeat-y center top;
 }
 
 #mcbase-grid.grid-disabled {
