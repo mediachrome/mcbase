@@ -20,8 +20,8 @@ stylesheets[screen][] = css/mcbase.base.css
 stylesheets[print][] = css/mcbase.print.css
 
 ; Scripts  ---------------------------------------------------------------
-; scripts[] = js/grid.js
-; This is now activated through template.php
+; scripts[] = js/example.js
+
 
 ; Regions --------------------------------------------------------------------
 ; these content regions are available for block placement

@@ -5,8 +5,9 @@ core = 7.x
 
 screenshot = images/screenshot.png
 
-; stylesheets[screen][] = css/layout.css
+
 stylesheets[screen][] = css/style.css
+stylesheets[print][] = css/print.css
 
 regions[header] = Header
 regions[header] = Header
@@ -24,3 +25,14 @@ regions[footer_fourth] = Footer fourth
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[help] = Help
+
+; Default theme settings
+settings[breadcrumb_display]   = yes
+settings[breadcrumb_separator] = ' › '
+settings[breadcrumb_home]      = 1
+settings[breadcrumb_trailing]  = 1
+settings[breadcrumb_title]     = 1
+settings[mcbase_rebuild_registry] = 1
+settings[mcbase_enable_960_grid] = 1
+settings[mcbase_960gs_default_state] = grid-disabled
+
