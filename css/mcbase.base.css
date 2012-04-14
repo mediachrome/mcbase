@@ -650,8 +650,24 @@ a.fieldset-title {
   left: 0;
 }
 
+#footer .limiter {
+  padding: 0;
+}
+
+.footer-block {
+  width: 320px;
+  float: left;
+}
+
+#footer .footer-block .region {
+  padding: 20px 10px;
+}
+
+
 /* Admin menu font size override */
 
 #admin-menu {
   font-size: 10px;
 }
+
+
