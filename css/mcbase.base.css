@@ -96,12 +96,12 @@ ul.links.inline li a {
   margin: 0;
 }
 
-.node h1 a,
-.node h2 a,
-.node h3 a,
-.node h4 a,
-.node h5 a,
-.node h6 a { 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a { 
   color: inherit;
   text-decoration: none;
 }
