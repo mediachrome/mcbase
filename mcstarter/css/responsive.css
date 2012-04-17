@@ -1,0 +1,139 @@
+/*
+Responsive Design
+------------------------------------------------------*/
+ 
+ #page-wrapper, #page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-first #content .section {
+  margin-left: 320px;     /* LEFT value */
+}
+
+.sidebar-second #content .section {
+  margin-right: 320px;    /* RIGHT value */
+}
+
+.two-sidebars #content .section {
+  margin-left: 320px;     /* LEFT value */
+  margin-right: 320px;    /* RIGHT value */
+}
+
+#sidebar-first {
+  width: 320px;           /* LEFT value */
+	margin-right: -320px;   /* negative LEFT value */
+  margin-left: 0;
+}
+#sidebar-second {
+  width: 320px;          /* RIGHT value */
+  margin-left: -320px;    /* negative RIGHT value */
+  float: right;
+  margin-right: 0;
+}
+
+.limiter {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 960px) {
+  
+  /* scale columns 
+   * 
+   * If the limiter is not defining the outside margin as well
+   * as the page border, it should be 100%.
+   *
+  */
+  
+  .limiter {
+  width: 98%;
+  }
+
+  #highlighted .limiter {
+  overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 780px)  {
+    
+  /* Drop the right sidebar down */
+  .two-sidebars #content div.inner,
+  .sidebar-second #content div.inner {
+    margin-right: 0;   
+  }
+
+  #sidebar-second {
+    width: 100%;
+    clear: left;
+    float: none;
+  }
+  
+  #sidebar-second .block {
+    width: 48%;
+    float: left;
+  }
+  
+  #site-slogan {
+    margin: 0;
+  }
+  
+  #highlighted img {
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* One column */
+  
+  #main-menu li, #main-menu li a {
+    float: none;
+    display: block;
+  }
+  
+  #main-menu li a {
+    padding: 5px 10px 6px 48px;
+    font-size: 1em;
+  }
+
+    
+  .two-sidebars #content div.inner,
+  .sidebar-first #content div.inner {
+    margin-left: 0;    
+  }
+  
+  #sidebar-first, #content {
+    width: 100%;           
+    margin-right: 0;
+    clear: left;
+    float: none;  
+  } 
+  
+  .sidebar-first #content .section {
+    margin-left: 0; 
+  }
+  
+  .no-sidebars #content .region-content {
+  margin: 0 10px;
+  }
+
+  .no-sidebars h1, .no-sidebars #page-title {
+  margin-left: 10px;
+  }
+  
+  .region-footer {
+  padding: 0 10px;
+  }
+
+  #footer-first, #footer-second, #footer-third  {
+  margin: 0 10px 20px 10px;
+  width: auto;
+  float: none;
+  }
+    
+}
+
