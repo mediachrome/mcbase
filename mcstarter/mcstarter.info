@@ -5,10 +5,16 @@ core = 7.x
 
 screenshot = images/screenshot.png
 
+; stylesheets ----------------------------------------------------------------
+; use responsive.css to override the base theme page layout
 
 stylesheets[screen][] = css/style.css
 stylesheets[screen][] = css/responsive.css
 stylesheets[print][] = css/print.css
+
+; Regions --------------------------------------------------------------------
+; these content regions are available for block placement
+; some are special hidden regions: page_top, page_bottom, and help
 
 regions[header] = Header
 regions[header] = Header
@@ -26,6 +32,20 @@ regions[footer_fourth] = Footer fourth
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[help] = Help
+
+; Options --------------------------------------------------------------------
+; these are the checkboxes that are available on the theme settings page.
+
+; these are the stock options
+features[] = logo
+; features[] = name
+; features[] = slogan
+; features[] = node_user_picture
+;'features[] = comment_user_picture
+; features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
 
 ; Default theme settings
 settings[breadcrumb_display]   = yes
