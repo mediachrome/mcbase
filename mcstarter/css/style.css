@@ -34,27 +34,6 @@ padding-bottom: 50px;
 /* margin-top: -10px; */
 }
 
-/* standard 'Clean' link colours overrides*/
-
-a:link {
-  color: #003b89;
-}
-
-a:visited {
-  color: #003b89;
-}
-
-a:hover {
-  color: #007ee4;
-}
-
-a:visited:hover {
-  color: #007ee4;
-}
-
-a:focus {
-  color: #000;
-}
 
 /* Header 
 -------------------------------------------*/
@@ -143,17 +122,6 @@ padding: 10px;
 background-color: #ddebf3;
 }
 
-/* Bottom */
-
-#bottom .limiter, #footer .limiter {
-  background-color: #444;
-  color: #fff;
-}
-
-#bottom p, #bottom a {
-color: #fff;
-}
-
 /* Images */
 
 img.offsetleft {
@@ -183,5 +151,25 @@ div.status {
 #user-register .form-item .form-item{
   padding: 0;
   margin: 0;
+}
+
+/* Sidebar First
+-------------------------------------------*/
+
+/* Sidebar Second
+-------------------------------------------*/
+
+
+/* Footer
+-------------------------------------------*/
+
+
+#bottom .limiter, #footer .limiter {
+  background-color: #444;
+  color: #fff;
+}
+
+#bottom p, #bottom a {
+color: #fff;
 }
 
