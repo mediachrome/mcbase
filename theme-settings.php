@@ -64,6 +64,14 @@ function mcbase_form_system_theme_settings_alter(&$form, &$form_state) {
   '#default_value' => theme_get_setting('mcbase_enable_960_grid'),
   '#description' => t('Enable a default grid overlay to check column and other positioning'),
   );
+  
+  $form['themedev']['mcbase_grid_colour'] = array(
+  '#type' => 'radios',
+  '#title' => t('960 grid colour preference'),
+  '#options' => array('light' => 'Light', 'dark' => 'Dark'),
+  '#default_value' => theme_get_setting('mcbase_grid_colour'),
+  '#description' => t('Choose whether to use a dark coloured grid (preferable over a light background) or a light coloured grid (for dark backgrounds).'),
+  );
     
   $form['themedev']['mcbase_960gs_default_state'] = array(
   '#type' => 'radios',

@@ -117,6 +117,7 @@ function mcbase_preprocess_html(&$vars) {
     'theme_path' => $base_path . $path_to_mcbase,
     'theme_key' => str_replace('_', '-', $theme_key),
     'default_state' => theme_get_setting('mcbase_960gs_default_state'),
+    'grid_colour' => theme_get_setting('mcbase_grid_colour'),
   );
 
   if (theme_get_setting('mcbase_enable_960_grid')) {

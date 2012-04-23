@@ -66,6 +66,7 @@ settings[breadcrumb_trailing]  = 1
 settings[breadcrumb_title]     = 1
 settings[mcbase_rebuild_registry] = 1
 settings[mcbase_enable_960_grid] = 1
+settings[mcbase_grid_colour] = dark
 settings[mcbase_960gs_default_state] = grid-disabled
 
 
