@@ -666,7 +666,7 @@ a.fieldset-title {
 
 /* Admin menu font size override */
 
-#admin-menu {
+body.admin-menu #admin-menu {
   font-size: 11px;
 }
 
