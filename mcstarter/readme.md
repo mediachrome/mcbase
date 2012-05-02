@@ -1,5 +1,12 @@
 #Mediachrome Starter
 
+*Notes on use and development*
+
 Mediachrome starter theme built on top of Mediachrome Base Theme.
 
-mc_starter 21:07:2010
+To implement javascript actions triggered by media queries set in responsive css:
+
+`var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+if (size == 'widescreen') {
+    // go nuts
+}`
