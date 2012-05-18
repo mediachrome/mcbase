@@ -40,8 +40,9 @@ body:after {
 /* Phone menu */
 
 /* hide the menu */
-.padding {
+#navigation .phone-navigation {
   padding-top: 30px;
+  min-height: 30px;
 }
 
 #navigation h2 {
@@ -63,10 +64,6 @@ body:after {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
 }
 
-.menu-hidden {
+.hidden-menu {
   display: none;
-}
-
-.menu-show {
-  display: block;
 }
