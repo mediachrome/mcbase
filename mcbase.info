@@ -17,10 +17,11 @@ screenshot = images/screenshot.png
 stylesheets[screen][] = css/mcbase.reset.css
 stylesheets[screen][] = css/mcbase.layout.css
 stylesheets[screen][] = css/mcbase.base.css
+stylesheets[screen][] = css/mcbase.responsive.css
 stylesheets[print][] = css/mcbase.print.css
 
 ; Scripts  ---------------------------------------------------------------
-; scripts[] = js/example.js
+  scripts[] = js/responsive.js
 
 
 ; Regions --------------------------------------------------------------------

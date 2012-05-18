@@ -1,0 +1,72 @@
+/*
+Responsive Design
+------------------------------------------------------*/
+
+/* Leave a trail for javascript */
+body:after {
+  content: 'widescreen';
+  display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+  
+  /* Leave a trail for javascript */
+  body:after {
+    content: 'standard';
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 780px)  {
+
+  /* Leave a trail for javascript */
+  body:after {
+    content: 'tablet';
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+    
+  /* Leave a trail for javascript */
+    body:after {
+    content: 'phone';
+    display: none;
+  }  
+}
+
+
+/* Phone menu */
+
+/* hide the menu */
+.padding {
+  padding-top: 30px;
+}
+
+#navigation h2 {
+  z-index: 20;
+  right: 10px;
+}
+
+#menu-toggle {
+  clip: inherit !important;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background: #c11 url(graphics/mainmenu-popdown-arrow.png) no-repeat center bottom;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 5px 23px;
+  font-size: 0.8em;
+  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+  -moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+}
+
+.menu-hidden {
+  display: none;
+}
+
+.menu-show {
+  display: block;
+}
