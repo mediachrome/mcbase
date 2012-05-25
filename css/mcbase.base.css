@@ -662,12 +662,3 @@ a.fieldset-title {
 #footer .footer-block .region {
   padding: 20px 10px;
 }
-
-
-/* Admin menu font size override */
-
-body.admin-menu #admin-menu {
-  font-size: 11px;
-}
-
-
