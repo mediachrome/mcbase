@@ -6,3 +6,30 @@
  * blocks to hide etc
  *
 */
+
+/* Clear away a lot of irrelevant stuff */
+hr,
+.ahem,
+.element-invisible,
+#skip-link,
+#block-search-form {
+  display: none;
+}
+
+#sidebar-first, 
+#sidebar-second,
+#main-menu {
+  display: none;
+}
+
+/* Make headers render a little more stylishly */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Get consistent modern looking type please */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 25mm;
+}
