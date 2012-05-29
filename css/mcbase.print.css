@@ -18,8 +18,18 @@ hr,
 
 #sidebar-first, 
 #sidebar-second,
+#navigation,
 #main-menu {
   display: none;
+}
+
+.region-page-top,
+.region-page-bottom {
+  display: none;
+}
+
+#main-wrapper {
+  margin: 20px 0;
 }
 
 /* Make headers render a little more stylishly */
