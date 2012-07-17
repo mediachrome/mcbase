@@ -50,19 +50,3 @@ a {
 
 /* Images */
 
-
-/* Views defaults */
-
-.views ul, .views ul li {
-  list-style-type: none;
-}
-
-.views ul {
-  margin: 0;
-  padding: 0;
-}
-
-.views ul li {
-  margin: 0;
-  padding: 0;
-}
