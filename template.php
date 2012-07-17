@@ -92,6 +92,11 @@ function taxonomy_node_get_terms($node, $key = 'tid') {
  
 function mcbase_preprocess_html(&$vars) {
 
+// explicitly declare the object
+// http://drupal.org/node/1065270#comment-4107538
+ 
+  $vars['rdf'] = new stdClass;
+  
 // Uses RDFa attributes if the RDF module is enabled
 // Lifted from Adaptivetheme for D7, full credit to Jeff Burnz
 // ref: http://drupal.org/node/887600
