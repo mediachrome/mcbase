@@ -52,24 +52,16 @@
  *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
  *   comment/reply/12345).
  *
- * Regions:
- * - $page['help']: Dynamic help text, mostly for admin pages.
- * - $page['highlighted']: Items for the highlighted content region.
- * - $page['content']: The main content of the current page.
- * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['sidebar_second']: Items for the second sidebar.
- * - $page['header']: Items for the header region.
- * - $page['footer']: Items for the footer region.
  *
  * @see template_preprocess()
  * @see template_preprocess_page()
  * @see template_process()
  */
 ?>
-
+<!-- mcbase page.tpl.php -->
 <div id="page-wrapper"><div id="page">
 
-<header id="header" role="navigation"><div class="limiter clearfix">
+<header id="header" role="navigation"><div class="limiter">
 
 <?php print render($page['header']); ?>
 
@@ -79,7 +71,7 @@
 
 </div></header> <!-- /.section, /#header -->
   
-<div id="branding" role="banner"><div class="limiter clearfix">
+<div id="branding" role="banner"><div class="limiter">
 
 <?php if ($logo): ?>
 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -113,29 +105,28 @@
 </div></div> <!-- /.limiter, /#branding -->
 
 <?php if ($main_menu): ?>
-<nav id="navigation" role="navigation"><div class="limiter clearfix">
 
-<?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
+<nav id="navigation" role="navigation"><div class="limiter">
 
-<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
+  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
+
+  <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
 
 <?php if ($breadcrumb): ?>
-<div id="breadcrumb"><?php print $breadcrumb; ?></div>
+  <div id="breadcrumb"><?php print $breadcrumb; ?></div>
 <?php endif; ?>
 
 </div></nav> <!-- /.limiter, /#navigation -->
 <?php endif; ?>
 
+<div id="main-wrapper"><div id="main" class="limiter<?php /*  if ($main_menu) { print ' with-navigation'; } */ ?>">
+
 <?php if($messages) : ?>
-<div class="limiter clearfix">
 <?php 
   /* Don't let the messages get clogged up in the design */
   print $messages; 
 ?>
-</div>
 <?php endif; ?>
-
-<div id="main-wrapper"><div id="main" class="limiter clearfix<?php /*  if ($main_menu) { print ' with-navigation'; } */ ?>">
 
 <div id="content" class="column" role="main"><div class="section">
       
@@ -154,6 +145,7 @@
 <?php print render($title_suffix); ?>
 
 <?php print render($page['help']); ?>
+
 <?php if ($action_links): ?>
 <ul class="action-links"><?php print render($action_links); ?></ul>
 <?php endif; ?>
@@ -189,25 +181,31 @@
 <?php endif; ?>
 
 </div></div> <!-- /#main, /#main-wrapper -->
-  
-<footer id="footer-first" role="contentinfo"><div class="limiter">
-<?php print render($page['footer_first']); ?>
-</div></footer> <!-- /.section, /#footer -->
 
-<footer id="footer" role="contentinfo"><div class="limiter">
+<?php if($page['pre_footer']) : ?>
+<div id="pre-footer" role="contentinfo"><div class="limiter">
+<?php print render($page['pre_footer']); ?>
+</div></div> <!-- /.limiter, /#pre-footer -->
+<?php endif; ?>
+
+<div id="footer-wrapper"><div class="limiter">
+
+<div id="footer-first"  class="footer-block">
+<?php print render($page['footer_first']); ?>
+</div>
 
 <div id="footer-second"  class="footer-block">
 <?php print render($page['footer_second']); ?>
 </div>
 
-<div id="footer-third"  class="footer-block">
+<div id="footer-third" class="footer-block clearfix">
 <?php print render($page['footer_third']); ?>
 </div>
 
-<div id="footer-fourth" class="footer-block clearfix">
-<?php print render($page['footer_fourth']); ?>
-</div>
+<footer id="footer" role="contentinfo">
+<?php print render($page['footer']); ?>
+</footer> <!-- /#footer -->
 
-</div></footer> <!-- /.section, /#footer -->
+</div></div> <!-- /.limiter, /#footer-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->

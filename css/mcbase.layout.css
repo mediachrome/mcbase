@@ -9,6 +9,10 @@ hr,
   display: block;
 }
 
+html, body, #page {
+height: 100%;
+}
+
 /* uncomment these color rules to make the layout easier to see */
 /*
 #main           { background: #ccc; }
@@ -39,6 +43,10 @@ hr,
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+#page-wrapper {
+  min-height: 100%;
 }
 
 /**

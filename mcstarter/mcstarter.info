@@ -17,7 +17,6 @@ stylesheets[print][] = css/print.css
 ; some are special hidden regions: page_top, page_bottom, and help
 
 regions[header] = Header
-regions[header] = Header
 regions[branding] = Branding
 regions[content_top] = Content top
 regions[content] = Content
@@ -25,10 +24,11 @@ regions[content_bottom] = Content bottom
 regions[highlighted] = Highlighted
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
+regions[pre_footer] = Pre-footer
 regions[footer_first] = Footer first
 regions[footer_second] = Footer second
 regions[footer_third] = Footer third
-regions[footer_fourth] = Footer fourth
+regions[footer] = Footer
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[help] = Help
