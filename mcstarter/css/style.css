@@ -4,10 +4,11 @@ textarea,
 body { 
   font-family: 'Lucida Grande', Arial, sans-serif;
   color: #333;
+  background-color: #fff;
 }
 
 #page-wrapper {
-  background-color: #778;
+  background-color: #ddd;
 }
 
 #main-wrapper {
@@ -24,11 +25,6 @@ body {
 /* background: url(graphics/sidebar-right-bg.png) repeat-y right top; */
 }
 
-
-#navigation .limiter {
-
-}
-
 #page .block {
   margin-bottom: 20px;
 }
@@ -37,6 +33,10 @@ body {
 
 /* Header 
 -------------------------------------------*/
+#header {
+  background-color: #eee;
+}
+
 
 #header .block-menu {
 float: left;
@@ -53,12 +53,21 @@ float: right;
 
 
 #branding {
-  background: -webkit-linear-gradient(#aaa 0%, #778 100%)
-
+  background: -webkit-linear-gradient(#eee 0%, #ddd 100%)
 }
 
 #branding .limiter {
   padding: 20px 0;
+}
+
+#branding:after {
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  background: transparent url(graphics/shadow-cast-down.png) repeat-x left top;
+  z-index: 2;
+  display: block;
+  content: " ";
 }
 
 /* Navigation
@@ -73,28 +82,38 @@ background: #fff;
 }
 
 #main-menu {
-  background-color: #9eb2ab;
   padding: 0;
   margin: 0;
   float: left;
   width: 100%;
+  background-color: #aaa;
 }
 
 #main-menu li  {
   float: left;
+  padding: 5px;
 }
 
 
 #main-menu li a {
   color: #000;
   padding: 3px 5px;
-  background-color: #9eb2ab;
 }
 
-#main-menu li a:hover {
-  color: #fff;
-  background-color: #000;
+#navigation #secondary-menu li {
+  padding: 5px 0;
 }
+
+#navigation #secondary-menu li a {
+  border-right: 1px solid #999;
+  padding: 0 9px 0 10px;
+}
+
+#navigation #secondary-menu li.first a {
+  border-left: 1px solid #999;
+  padding: 0 9px 0 9px;
+}
+
 
 #navigation .breadcrumb {
   padding: 10px 20px;
@@ -102,13 +121,12 @@ background: #fff;
 
 
 
-
 /* Content theming 
 -------------------------------------------*/
 
 
-#content div.content-margin {
-  margin: 0 20px;
+#main .section {
+  margin: 50px 0;
 }
 
 #frontpage .node-page-page {
@@ -168,9 +186,22 @@ div.status {
 -------------------------------------------*/
 
 
-#footer-wrapper{
-  border-top: 1px solid #777;
-  color: #fff;
+#footer-wrapper {
+
+}
+
+#footer-wrapper:before {
+  height: 16px;
+  background: transparent url(graphics/shadow-cast-up.png) repeat-x left top;
+  display: block;
+  content: " ";
+  margin-top: -16px;
+}
+
+
+
+#footer .region {
+  margin: 50px 0;
 }
 
 
