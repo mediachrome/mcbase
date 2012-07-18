@@ -123,11 +123,13 @@ function mcbase_preprocess_html(&$vars) {
     'theme_key' => str_replace('_', '-', $theme_key),
     'default_state' => theme_get_setting('mcbase_960gs_default_state'),
     'grid_colour' => theme_get_setting('mcbase_grid_colour'),
+    'dev_mode' => theme_get_setting('mcbase_enable_960_grid'),
   );
-
+  
+  // add the $settings array within the mcbase namespace to Drupal.settings
+  drupal_add_js(array('mcbase' => $settings), 'setting');
+  
   if (theme_get_setting('mcbase_enable_960_grid')) {
-    // add the $settings array within the mcbase namespace to Drupal.settings
-    drupal_add_js(array('mcbase' => $settings), 'setting');
     drupal_add_js($path_to_mcbase . '/js/grid.js');
     drupal_add_css($path_to_mcbase . '/css/grid.css');
   }

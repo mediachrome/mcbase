@@ -41,12 +41,14 @@ body:after {
 
 /* hide the menu */
 #navigation .phone-navigation {
+/*
   padding-top: 30px;
   min-height: 30px;
+*/
 }
 
-#navigation h2 {
-  z-index: 20;
+#navigation h2.menu-title {
+  z-index: 0;
   right: 10px;
 }
 

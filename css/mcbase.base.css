@@ -40,6 +40,10 @@ body {
   height:auto;
   }
 
+#main-menu, #secondary-menu {
+  margin: 0;
+  padding: 0;
+}
 
 /**
  * Links ==============================================================
@@ -60,6 +64,8 @@ ul.links.inline li a {
   text-decoration: none;
   color: #333;
 }
+
+
 
 /**
  * Content Typography ==============================================================
@@ -508,8 +514,8 @@ body#tinymce {
 
 /* Messages */
 
-div.messages {
-  margin: 10px 0;
+.message-wrapper {
+  padding: 10px 0;
 }
 
 div.status {

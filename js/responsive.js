@@ -8,10 +8,13 @@
       // with thanks to Matt Wilcox for the window.resize stuff
       // http://mattwilcox.net/archive/entry/id/1088/
       
+      var dev_mode = Drupal.settings.mcbase.dev_mode;
+      // alert('dev_mode = ' + dev_mode);
       var current_size; // defaults to blank so it's always analysed on first load
       var did_resize  = true; // defaults to true so it's always analysed on first load
       var navigation_classes = $('#navigation').attr("class"); // store the default #navigation classes
       var raw_navigation = $("#navigation").html(); // grab the unaltered #navigation contents and store it for simpler resets on resize
+      
      
       // on window resize, set the didResize to true
       $(window).resize(function() {
@@ -32,60 +35,38 @@
           // if the new breakpoint is different to the old one, do some stuff
           
           if (new_size != current_size) {
-            
-            // print this out somewhere we can see
-            /*
-$("#responsive-indicator .current-size").remove();
-            $("#responsive-indicator").append("<div class='current-size'></div>");
-            $(".current-size").html(current_size + ' / ' + new_size);
-*/
-        
-            // remove the old #navigation content)
+            // alert('new size does not equal the current stored size');                   
+            // replace #navigation content)
             $("#navigation .limiter").remove();
-
-            // now re-insert clean mark-up
             $("#navigation").html(raw_navigation);
+            
+            if (new_size === 'widescreen') {}
+            
+            if (new_size === 'standard') {}
 
-            // alert('size = ' + size);
-            
-            if (new_size === 'widescreen') {
-            
-            
-            // set the current size
-              current_size = new_size;
-            }
-            
-            if (new_size === 'standard') {
-            
-            
-            // set the current size
-              current_size = new_size;
-            }
-
-            if (new_size === 'tablet') {
-            
-            
-            // set the current size
-              current_size = new_size;
-            }
-
-            
+            if (new_size === 'tablet') {}
             
             if (new_size === 'phone') {
-  
               // add an element-invisible class to the menu 
-              $('#navigation').addClass('phone-navigation');
-              $('#main-menu').addClass('hidden-menu');
-              
+              $('#navigation .limiter').addClass('phone-navigation');
+              $('#main-menu').addClass('hidden-menu');              
               // add menu button id to the nav title
-              $('#navigation h2').removeClass('element-invisible');
-              $('#navigation h2').attr('id', 'menu-toggle');
-              
-              // set the current size
-              current_size = new_size;
+              $('#navigation h2.menu-title').removeClass('element-invisible');
+              $('#navigation h2.menu-title').attr('id', 'menu-toggle');
+              // set a toggle action on the nav title to hide and show the menu */
+              $('#menu-toggle').bind('click', function(){
+                $("#main-menu").toggleClass('hidden-menu');
+              });
             }
             
-            
+            current_size = new_size;
+            // if we're in development mode, print this out somewhere we can see
+            if(dev_mode == 1) {
+            if ($("#responsive-indicator").length) {
+            $("#responsive-indicator .current-size").remove();
+            $("#responsive-indicator").append("<div class='current-size'></div>");
+            $(".current-size").html('script: ' + current_size + ' / css: ' + new_size);
+            }}
           }
         }
       }, 250);

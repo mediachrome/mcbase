@@ -108,7 +108,7 @@
 
 <nav id="navigation" role="navigation"><div class="limiter">
 
-  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
+  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible', 'menu-title'))));  ?>
 
   <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')), 'heading' => array('text' => t('Secondary menu'), 'level' => 'h2', 'class' => array('element-invisible'))));  ?>
 
@@ -122,10 +122,9 @@
 <div id="main-wrapper"><div id="main" class="limiter<?php /*  if ($main_menu) { print ' with-navigation'; } */ ?>">
 
 <?php if($messages) : ?>
-<?php 
-  /* Don't let the messages get clogged up in the design */
-  print $messages; 
-?>
+<div class="message-wrapper">
+<?php print $messages; ?>
+</div>
 <?php endif; ?>
 
 <div id="content" class="column" role="main"><div class="section">
