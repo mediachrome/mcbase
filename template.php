@@ -130,8 +130,8 @@ function mcbase_preprocess_html(&$vars) {
   drupal_add_js(array('mcbase' => $settings), 'setting');
   
   if (theme_get_setting('mcbase_enable_960_grid')) {
-    drupal_add_js($path_to_mcbase . '/js/grid.js');
-    drupal_add_css($path_to_mcbase . '/css/grid.css');
+    drupal_add_js($path_to_mcbase . '/js/mcbase.grid.js');
+    drupal_add_css($path_to_mcbase . '/css/mcbase.grid.css');
   }
   
   // Taxonomy classes for body 

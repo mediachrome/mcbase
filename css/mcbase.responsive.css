@@ -65,7 +65,20 @@ body:after {
   -moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
 }
+#navigation .limiter {
+  height: auto;
+  overflow: hidden;
+}
+
+#main-menu {
+  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
 
 .hidden-menu {
-  display: none;
+  margin-top: -20em !important;
 }
+
