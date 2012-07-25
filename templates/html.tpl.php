@@ -50,8 +50,11 @@
   <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <?php print $scripts; ?>
 <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lt IE 9]><link type="text/css" rel="stylesheet" media="all" href="<?php echo path_to_theme(); ?>/css/mcbase.ie-lt9.css" /><![endif]-->
-<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+<link type="text/css" rel="stylesheet" media="all" href="<?php echo path_to_theme(); ?>/css/mcbase.ie-lt9.css" />
+</script>
+<![endif]-->
   <meta name="viewport" content="width=device-width" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
