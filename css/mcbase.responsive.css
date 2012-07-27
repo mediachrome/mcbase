@@ -39,16 +39,13 @@ body:after {
 
 /* Phone menu */
 
-/* hide the menu */
+
 #navigation .phone-navigation {
-/*
-  padding-top: 30px;
-  min-height: 30px;
-*/
+
 }
 
 #navigation h2.menu-title {
-  z-index: 0;
+  z-index: 1;
   right: 10px;
 }
 
@@ -59,12 +56,14 @@ body:after {
   background: #c11 url(graphics/mainmenu-popdown-arrow.png) no-repeat center bottom;
   color: #fff;
   text-transform: uppercase;
-  padding: 5px 5px 23px;
+  padding: 15px 5px 23px;
+  top: -10px;
   font-size: 0.8em;
   -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
   -moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
 }
+
 #navigation .limiter {
   height: auto;
   overflow: hidden;
@@ -79,6 +78,6 @@ body:after {
 }
 
 .hidden-menu {
-  margin-top: -25em !important;
+  margin-top: -23em !important;
 }
 
