@@ -47,9 +47,10 @@ body:after {
 */
 }
 
-#navigation h2.menu-title {
-  z-index: 0;
+#navigation .menu-title {
+  z-index: 1;
   right: 10px;
+  position: absolute;
 }
 
 #menu-toggle {
