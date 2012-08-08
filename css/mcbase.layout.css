@@ -123,6 +123,7 @@ height: 100%;
 position: relative;
 /*margin-top: 3em;*/
 /* Add this margin to accommodate the absolutely positioned menu above */
+min-height: 450px;
 }
 
 
