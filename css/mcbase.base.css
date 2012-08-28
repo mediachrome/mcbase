@@ -562,6 +562,7 @@ fieldset .fieldset-legend {
   margin-top: 1em;
   padding-left: 15px;
   position: absolute;
+  top: 0;
 }
 
 legend {
