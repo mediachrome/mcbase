@@ -1,0 +1,13 @@
+/* mcbase.maintenance.css */
+
+.maintenance-logo-block, .maintenance-panel {
+  text-align: center;
+  width: 320px;
+  margin: 40px auto;
+}
+
+.maintenance-logo-block #name-and-slogan, .maintenance-logo-block #site-name  {
+  float: none;
+  margin: 20px 0;
+  text-align: center;
+}

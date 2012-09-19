@@ -44,7 +44,11 @@ body:after {
 
 }
 
+<<<<<<< HEAD
 #navigation h2.menu-title {
+=======
+#navigation .menu-title {
+>>>>>>> 48cfdd146be5043f4963a9df0f7b9ab9b70e8ae4
   z-index: 1;
   right: 10px;
   position: absolute;

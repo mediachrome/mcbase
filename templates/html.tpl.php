@@ -41,13 +41,12 @@
  * Prevent IE slipping into compatibility mode for any reason
  * This must come before any other meta tag and before any IE conditionals
  */
-  echo '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">';
+  print '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">';
 ?>
 
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <?php print $scripts; ?>
 <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]>

@@ -18,7 +18,8 @@ stylesheets[screen][] = css/mcbase.reset.css
 stylesheets[screen][] = css/mcbase.layout.css
 stylesheets[screen][] = css/mcbase.base.css
 stylesheets[screen][] = css/mcbase.responsive.css
-stylesheets[print][] = css/mcbase.print.css
+stylesheets[screen][] = css/mcbase.maintenance.css
+stylesheets[print][]  = css/mcbase.print.css
 
 ; Scripts  ---------------------------------------------------------------
 scripts[] = js/mcbase.responsive.js 
