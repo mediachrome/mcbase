@@ -2,9 +2,13 @@ input,
 select,
 textarea,
 body { 
-  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-family: 'Open Sans', 'Source Sans Pro', 'Lucida Grande', Arial, sans-serif;
   color: #333;
   background-color: #fff;
+}
+
+strong {
+  font-weight: 700;
 }
 
 #page-wrapper {

@@ -54,6 +54,8 @@
 <link type="text/css" rel="stylesheet" media="all" href="<?php echo path_to_theme(); ?>/css/mcbase.ie-lt9.css" />
 </script>
 <![endif]-->
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width" />
 </head>
 <!-- mcstarter html.tpl.php -->
