@@ -56,6 +56,7 @@
 <![endif]-->
   <meta name="viewport" content="width=device-width" />
 </head>
+<!-- mcstarter html.tpl.php -->
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
   <?php print $page_top; ?>
