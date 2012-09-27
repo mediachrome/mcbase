@@ -5,11 +5,50 @@ body {
   font-family: 'Open Sans', 'Source Sans Pro', 'Lucida Grande', Arial, sans-serif;
   color: #333;
   background-color: #fff;
+  font-size: 13px;
+}
+
+
+/* Typography base 
+-------------------------------------------*/
+
+/**
+ * Appropriate line-height is to some extent dependent on
+ * font size and x height.
+ * 
+ * Override the default 1.475em here if required
+ */
+ 
+#content .node,
+.node pre,
+.node blockquote,
+.node div.codeblock {
+/* line-height: 1.475em; */ 
+}
+
+.node p,
+.node ul,
+.node ol,
+.node dl,
+.node pre,
+.node div.codeblock,
+.node blockquote 
+{ 
+/* margin: 0px 0px 1.475em;  */
+/* margin: 0px 0px .875em;  */
+}
+
+.node dd + dt {
+/* margin-top: 1.475em; */
 }
 
 strong {
   font-weight: 700;
 }
+
+
+/* Page 
+-------------------------------------------*/
 
 #page-wrapper {
   background-color: #ddd;
