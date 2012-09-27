@@ -1,0 +1,8 @@
+/* 
+ * stub file: html.tpl.php calls on ie-lt9.css only because 
+ * it's a base template for child themes. A mcbase IE conditional
+ * would then be ignored.
+ * 
+ * We don't want a GOTCHA if someone copies it over to their 
+ * new child theme without the link to their IE conditional 
+*/
