@@ -609,6 +609,7 @@ a.fieldset-title {
 
 #search-block-form {
 	border: 1px solid #aaa;
+	background-color: #fff;
 	padding: 0;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
@@ -626,6 +627,11 @@ a.fieldset-title {
 	margin: 0;
 	vertical-align: middle;
 }
+
+#search-block-form, #search-block-form input, {
+	background-color: #fff;
+}
+
 
 #search-block-form .form-text {
 	width: 140px;
