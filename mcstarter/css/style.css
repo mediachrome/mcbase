@@ -157,11 +157,48 @@ background: #fff;
   padding: 0 9px 0 9px;
 }
 
-
 #navigation .breadcrumb {
   padding: 10px 20px;
 }
 
+/* User menu */
+
+#block-system-user-menu {
+
+}
+
+#block-system-user-menu .content {
+  text-align: right;
+}
+
+#block-system-user-menu .content ul.menu {
+  padding: 0;
+  display: inline;
+  text-align: right;
+}
+
+#block-system-user-menu .content li {
+ display: inline;
+ float: none;
+ text-align: right;
+ border-right: 1px solid #333;
+ margin: 0 5px 0 0;
+ padding: 0 7px 0 0;
+ font-size: 0.85em;
+}
+
+#block-system-user-menu .content li.last {
+ border-right: 0;
+ margin: 0;
+ padding: 0;
+}
+
+
+#block-system-user-menu .content li a {
+ display: inline;
+ float: none;
+ text-decoration: none;
+}
 
 
 /* Content theming 
