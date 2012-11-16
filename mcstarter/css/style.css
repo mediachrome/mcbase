@@ -157,6 +157,14 @@ background: #fff;
   padding: 0 9px 0 9px;
 }
 
+#main-menu .active-trail, #main-menu .active-trail:hover {
+  background-color: #922;
+}
+
+#main-menu .active, #main-menu .active:hover {
+  color: #fff;
+}
+
 #navigation .breadcrumb {
   padding: 10px 20px;
 }
