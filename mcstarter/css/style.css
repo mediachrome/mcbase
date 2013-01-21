@@ -100,7 +100,8 @@ float: right;
 }
 
 #branding .limiter {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #branding:after {
