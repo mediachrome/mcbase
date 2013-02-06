@@ -63,11 +63,12 @@
 
 <header id="header" role="navigation"><div class="limiter">
 
-<?php print render($page['header']); ?>
-
 <?php if ($main_menu): ?>
 <p id="skip-link"><em><a href="#navigation">Skip to Navigation</a></em><!--  &darr; --></p>
 <?php endif; ?>
+
+<?php print render($page['header_first']); ?>
+<?php print render($page['header_second']); ?>
 
 </div></header> <!-- /.section, /#header -->
   
