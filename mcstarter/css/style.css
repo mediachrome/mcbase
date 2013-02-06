@@ -73,21 +73,28 @@ strong {
 }
 
 
-
 /* Header 
 -------------------------------------------*/
 #header {
-  background-color: #eee;
+  
 }
 
+.region-header-first {
+  width: 50%;
+  float: left;
+}
+
+.region-header-second {
+  width: 50%;
+  float: right;
+}
 
 #header .block-menu {
 float: left;
 margin: 0 0 10px;
 }
 
-
-#header #search-theme-form {
+#header #search-block-form {
 float: right;
 }
 
