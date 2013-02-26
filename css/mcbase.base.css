@@ -76,17 +76,31 @@ ul.links.inline li a {
  
 #content .node { line-height: 1.475em; }
 
-.node p,
-.node ul,
-.node ol,
-.node dl,
-.node pre,
-.node div.codeblock,
-.node blockquote 
+.node p, .view p,
+.node ul, .view ul,
+.node ol, .view ol,
+.node dl, .view dl,
+.node pre, .view pre.
+.node div.codeblock, .view div.codeblock,
+.node blockquote, .view blockquote
 { 
   margin: 0px 0px 1.475em; 
 /*   margin: 0px 0px .875em;  */
 }
+
+/* Views displaying body content */
+.view p,
+.view ul,
+.view ol,
+.view dl,
+.view pre,
+.view div.codeblock,
+.view blockquote
+{ 
+  margin: 0px 0px 1.475em; 
+/*   margin: 0px 0px .875em;  */
+}
+
 
 .node dd + dt {
   margin-top: 1.475em;
