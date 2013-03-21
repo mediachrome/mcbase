@@ -197,10 +197,15 @@ function mcbase_preprocess_html(&$vars) {
 
 
 function mcbase_preprocess_page(&$vars, $hook) {
+  
   // Removes the enclosing tab html if there are no tabs to display
-
   if (empty($vars['tabs']['#primary']) && empty($vars['tabs']['#primary'])) {
     $vars['tabs'] = '';
+  }
+  
+  // generate template suggestions per content type
+  if (isset($vars['node']->type)) {
+    $vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
   }
 }
 
