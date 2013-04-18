@@ -448,3 +448,37 @@ function mcbase_links($variables) {
   return $output;
 }
 
+/**
+ * THEME_preprocess_menu_block_wrapper function.
+ *
+ * http://drupal.org/node/1503938
+ * 
+ * @access public
+ * @param mixed &$variables
+ * @param mixed $hook
+ * @return menu_block with zebra striping
+ */
+ 
+ 
+function mcbase_preprocess_menu_block_wrapper(&$variables, $hook) {
+  stripe_children($variables['content']);
+}
+
+/**
+ * stripe_children function.
+ * 
+ * @access public
+ * @param mixed &$elements
+ * @return odd and even classes
+ */
+ 
+function stripe_children(&$elements) {
+  $zebra = 0;
+  foreach (element_children($elements) as $mlid){
+    $elements[$mlid]['#attributes']['class'][] = ($zebra % 2) ? 'even' : 'odd';
+    if(count(element_children($elements[$mlid]['#below'])>0)) {
+      stripe_children($elements[$mlid]['#below']);
+    }
+    $zebra++;
+  }
+}
