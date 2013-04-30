@@ -689,3 +689,27 @@ a.fieldset-title {
 #footer .footer-block .region {
   padding: 20px 10px;
 }
+
+
+/* pager */
+
+.item-list .pager li {
+  margin: 0 0 0.25em 0;
+  padding: 0.3em;
+}
+
+.pager-item, .pager-current {
+  font-weight: 700;
+  border: 1px solid #aaa;
+}
+
+.pager li a {
+  text-decoration: none;
+  padding: 0;
+  color: inherit;
+}
+
+.pager-current {
+  background-color: #777;
+  color: #ededed;
+}
