@@ -246,12 +246,14 @@ background-color: #ddebf3;
 
 /* Images */
 
-img.offsetleft {
-  margin-left: -30px;
+.half-width-left {
+  float: left;
+  margin: 0 10px 10px 0;
   }
 
-img.offsetright {
-  margin-right: -30px;
+.half-width-right {
+  float: right;
+  margin: 0 0 10px 10px;
   }
 
 div.status {
