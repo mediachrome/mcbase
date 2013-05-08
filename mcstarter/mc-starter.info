@@ -10,6 +10,7 @@ screenshot = images/screenshot.png
 
 stylesheets[screen][] = css/style.css
 stylesheets[screen][] = css/responsive.css
+; stylesheets[screen][] = css/better-messages.css
 stylesheets[print][] = css/print.css
 
 ; Regions --------------------------------------------------------------------

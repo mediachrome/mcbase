@@ -1,0 +1,56 @@
+#better-messages-default {
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  -o-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  background-color: #fff;
+  padding: 10px;
+}
+
+#better-messages-default #messages-inner {
+	position:relative;
+	width:100%;
+}
+#better-messages-default .messages-label {
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	line-height:15px;
+	margin-bottom:3px;
+	padding:5px 10px;
+	text-transform:uppercase;
+}
+
+#better-messages-default .body {
+	background-color:#FFFFFF;
+	padding:5px;
+}
+
+#better-messages-default .footer {
+	margin-top:10px;
+	padding-top:5px;
+	text-align:right;
+	height: 25px;
+}
+
+#better-messages-default a.message-close { 
+	background:transparent url(graphics/better-messages/closelabel.gif) no-repeat;
+	display:block;
+	float:right;
+	height:22px;
+	width:66px;
+}
+
+#better-messages-default span.message-timer {
+  float:left;
+  line-height:22px;
+}
+
+#better-messages-default .messages {padding:10px 0px 10px 45px;margin-bottom:5px;overflow:auto;max-height:400px;}
+#better-messages-default div.status {background:transparent url(graphics/better-messages/status.png) no-repeat 5px 5px;border:0;}
+#better-messages-default div.error {background:transparent url(graphics/better-messages/error.png) no-repeat 5px 5px;border:0;}
+#better-messages-default div.warning {background:transparent url(graphics/better-messages/warning.png) no-repeat 5px 5px;border:0;}
+
+h2.error {background-color:#DD7777;}
+h2.warning {background-color:#F0C020;}
+h2.status {background-color:#77DD77;}
