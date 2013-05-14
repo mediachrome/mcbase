@@ -246,15 +246,22 @@ background-color: #ddebf3;
 
 /* Images */
 
-.half-width-left {
+img.full-width {
+  display: block;
+  float: none;
+  margin: 0 auto 10px;
+  }
+
+img.half-width-left {
   float: left;
   margin: 0 10px 10px 0;
   }
-
-.half-width-right {
+  
+img.half-width-right {
   float: right;
   margin: 0 0 10px 10px;
   }
+
 
 div.status {
   background-color: #fff;
