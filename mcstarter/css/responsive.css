@@ -71,14 +71,18 @@ body:after {
   }
 }
 
-@media screen and (max-width: 780px)  {
+@media screen and (max-width: 800px)  {
 
   /* Leave a trail for javascript */
   body:after {
     content: 'tablet';
     display: none;
   } 
-
+  
+  #page-wrapper {
+    width: 768px;
+    overflow: hidden;
+  }
     
   /* Drop the right sidebar down */
   .two-sidebars #content div.inner,
@@ -105,7 +109,6 @@ body:after {
 
   }
   
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -115,6 +118,12 @@ body:after {
     content: 'phone';
     display: none;
   }  
+  
+  #page-wrapper {
+    width: 320px;
+    overflow: hidden;
+  }
+
   
   /* One column */
   
