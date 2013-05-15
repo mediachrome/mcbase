@@ -34,56 +34,56 @@ body:after {
     content: 'phone';
     display: none;
   }  
-}
+  
+  /* Phone menu */
 
-
-/* Phone menu */
-
-#navigation {
-  position: relative;
-  border-top: 1px solid #ddd;
+  #navigation {
+    position: relative;
+    border-top: 1px solid #ddd;
+    }
+  
+  #navigation .phone-navigation {
+  
+  }
+  
+  #navigation h2.menu-title {
+    z-index: 1;
+    right: 10px;
+    position: absolute;
+  }
+  
+  #menu-toggle {
+    clip: inherit !important;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background: #c11 url(graphics/mainmenu-popdown-arrow.png) no-repeat center bottom;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 5px 23px;
+    top: -10px;
+    font-size: 0.8em;
+    -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
+  }
+  
+  #navigation .limiter {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  #main-menu {
+    -webkit-transition: all 0.5s ease-in-out;
+  	-moz-transition: all 0.5s ease-in-out;
+  	-o-transition: all 0.5s ease-in-out;
+  	-ms-transition: all 0.5s ease-in-out;
+  	transition: all 0.5s ease-in-out;
+  }
+  
+  .hidden-menu {
+    margin-top: -33em !important;
   }
 
-
-#navigation .phone-navigation {
-
 }
 
-#navigation h2.menu-title {
-  z-index: 1;
-  right: 10px;
-  position: absolute;
-}
-
-#menu-toggle {
-  clip: inherit !important;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  background: #c11 url(graphics/mainmenu-popdown-arrow.png) no-repeat center bottom;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 15px 5px 23px;
-  top: -10px;
-  font-size: 0.8em;
-  -webkit-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
-  -moz-box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.8);
-}
-
-#navigation .limiter {
-  height: auto;
-  overflow: hidden;
-}
-
-#main-menu {
-  -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-.hidden-menu {
-  margin-top: -33em !important;
-}
 
