@@ -620,6 +620,15 @@ a.fieldset-title {
   text-decoration: none;
 }
 
+/* contextual menus */
+
+body .contextual-links, body .contextual-links li {
+  font-size: 13px;
+  font-weight: normal;
+  background-color: #fff;
+  color: #000;
+}
+
 /* Search Block */
 
 #search-block-form {
