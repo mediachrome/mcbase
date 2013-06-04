@@ -80,7 +80,7 @@ ul.links.inline li a {
 .node ul, .view ul,
 .node ol, .view ol,
 .node dl, .view dl,
-.node pre, .view pre.
+.node pre, .view pre,
 .node div.codeblock, .view div.codeblock,
 .node blockquote, .view blockquote,
 .node address, .view address
