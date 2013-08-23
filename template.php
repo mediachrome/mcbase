@@ -459,10 +459,13 @@ function mcbase_links($variables) {
  * @return menu_block with zebra striping
  */
  
+/*
  
 function mcbase_preprocess_menu_block_wrapper(&$variables, $hook) {
   stripe_children($variables['content']);
 }
+*/
+
 
 /**
  * stripe_children function.
@@ -472,6 +475,7 @@ function mcbase_preprocess_menu_block_wrapper(&$variables, $hook) {
  * @return odd and even classes
  */
  
+/*
 function stripe_children(&$elements) {
   $zebra = 0;
   foreach (element_children($elements) as $mlid){
@@ -482,3 +486,4 @@ function stripe_children(&$elements) {
     $zebra++;
   }
 }
+*/
