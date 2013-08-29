@@ -261,6 +261,12 @@ thead th {
 
 th, td { vertical-align: top; }
 
+/* system.theme.css stripes rows with solid colour. We don't want that. */
+
+tr.even, tr.odd {
+  background-color: transparent;
+}
+
 /**
  * Forms ==============================================================
  */
@@ -308,7 +314,7 @@ input.form-submit,
 input.teaser-button,
 input[type=button] {
   background-color: #3ca1dc;
-  border: 1px solid #3ca1dc;
+  border: 1px solid #3ca1dd;
   padding: 4px 12px;
   margin: 10px 5px 10px 0;
   -moz-border-radius: 5px;
@@ -652,7 +658,7 @@ body .contextual-links, body .contextual-links li {
 	vertical-align: middle;
 }
 
-#search-block-form, #search-block-form input, {
+#search-block-form, #search-block-form input {
 	background-color: #fff;
 }
 
