@@ -2,10 +2,9 @@ input,
 select,
 textarea,
 body { 
-  font-family: 'Open Sans', 'Source Sans Pro', 'Lucida Grande', Arial, sans-serif;
+  font-family: 'Source Sans Pro', 'Open Sans', 'Lucida Grande', Arial, sans-serif;
   color: #333;
   background-color: #fff;
-  font-size: 13px;
 }
 
 

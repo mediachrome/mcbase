@@ -17,26 +17,26 @@ body:after {
 }
 
 .sidebar-first #content .section {
-  margin-left: 320px;     /* LEFT value */
+  margin-left: 33%;     /* LEFT value */
 }
 
 .sidebar-second #content .section {
-  margin-right: 320px;    /* RIGHT value */
+  margin-right: 33%;    /* RIGHT value */
 }
 
 .two-sidebars #content .section {
-  margin-left: 320px;     /* LEFT value */
-  margin-right: 320px;    /* RIGHT value */
+  margin-left: 33%;     /* LEFT value */
+  margin-right: 33%;    /* RIGHT value */
 }
 
 #sidebar-first {
-  width: 320px;           /* LEFT value */
-	margin-right: -320px;   /* negative LEFT value */
+  width: 33%;           /* LEFT value */
+	margin-right: -33%;   /* negative LEFT value */
   margin-left: 0;
 }
 #sidebar-second {
-  width: 320px;          /* RIGHT value */
-  margin-left: -320px;    /* negative RIGHT value */
+  width: 33%;          /* RIGHT value */
+  margin-left: -33%;    /* negative RIGHT value */
   float: right;
   margin-right: 0;
 }
@@ -80,26 +80,45 @@ body:after {
   } 
   
   #page-wrapper {
-    width: 768px;
+    width: 100%;
     overflow: hidden;
   }
+  
+    /* Drop the left sidebar down */
+  
+  .two-sidebars #content .section,
+  .sidebar-first #content .section {
+    margin-left: 0;   
+  }
+
+  #sidebar-first {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
     
   /* Drop the right sidebar down */
-  .two-sidebars #content div.inner,
-  .sidebar-second #content div.inner {
+  
+ /*
+ .two-sidebars #content .section,
+  .sidebar-second #content .section {
     margin-right: 0;   
   }
 
   #sidebar-second {
     width: 100%;
-    clear: left;
+    clear: both;
     float: none;
   }
+*/
   
+/*
   #sidebar-second .block {
     width: 48%;
     float: left;
   }
+*/
   
   #site-slogan {
     margin: 0;
@@ -120,7 +139,8 @@ body:after {
   }  
   
   #page-wrapper {
-    width: 320px;
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -138,21 +158,29 @@ body:after {
   }
 
     
-  .two-sidebars #content div.inner,
-  .sidebar-first #content div.inner {
+  .two-sidebars #content .section,
+  .sidebar-first #content .section {
     margin-left: 0;    
   }
   
-  #sidebar-first, #content {
+  #sidebar-first, 
+  #sidebar-second,
+  #content {
     width: 100%;           
     margin-right: 0;
-    clear: left;
+    margin-left: 0;
+    clear: both;
     float: none;  
   } 
   
   .sidebar-first #content .section {
     margin-left: 0; 
   }
+  
+   .sidebar-second #content .section {
+    margin-right: 0; 
+  }
+
   
   .no-sidebars #content .region-content {
   margin: 0 10px;
