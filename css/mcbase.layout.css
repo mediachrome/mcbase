@@ -139,26 +139,26 @@ min-height: 450px;
 }
 
 .sidebar-first #content .section {
-  margin-left: 320px;     /* LEFT value */
+  margin-left: 33%;     /* LEFT value */
 }
 
 .sidebar-second #content .section {
-  margin-right: 320px;    /* RIGHT value */
+  margin-right: 33%;    /* RIGHT value */
 }
 
 .two-sidebars #content .section {
-  margin-left: 320px;     /* LEFT value */
-  margin-right: 320px;    /* RIGHT value */
+  margin-left: 33%;     /* LEFT value */
+  margin-right: 33%;    /* RIGHT value */
 }
 
 #sidebar-first {
-  width: 320px;           /* LEFT value */
-	margin-right: -320px;   /* negative LEFT value */
+  width: 33%;           /* LEFT value */
+	margin-right: -33%;   /* negative LEFT value */
   margin-left: 0;
 }
 #sidebar-second {
-  width: 320px;          /* RIGHT value */
-  margin-left: -320px;    /* negative RIGHT value */
+  width: 33%;          /* RIGHT value */
+  margin-left: -33%;    /* negative RIGHT value */
   float: right;
   margin-right: 0;
 }
