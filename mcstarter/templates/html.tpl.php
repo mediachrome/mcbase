@@ -56,7 +56,9 @@
 <![endif]-->
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-  <meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width" />
+<?php /* switch off iOS styling for phone numbers */ ?>
+<meta name="format-detection" content="telephone=no" />
 </head>
 <!-- mcstarter html.tpl.php -->
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
