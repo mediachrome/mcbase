@@ -8,8 +8,8 @@ body {
 #mcbase-grid {
   position: fixed;
   left: 50%;
-  margin-left: -480px;
-  width: 960px;
+  margin-left: -570px;
+  width: 1140px;
   height: 100%;
   background: transparent url(graphics/grid-dark.png) repeat-y center top;
 }
@@ -67,7 +67,7 @@ img#mcbase-grid {
 z-index: 99;
 border-left: 1px dotted #999;
 border-right: 1px dotted #999;
-margin-left: -481px;
+margin-left: -571px;
 }
 
 /* Responsive indicator */
