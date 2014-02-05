@@ -41,6 +41,8 @@
               $("#navigation .limiter").remove();
               $("#navigation").html(raw_navigation);
               
+              if (new_size === 'unlimited') {}
+              
               if (new_size === 'widescreen') {}
               
               if (new_size === 'standard') {}

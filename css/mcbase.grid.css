@@ -89,8 +89,22 @@ margin-left: -571px;
   display: none;
 }
 
+@media screen and (max-width: 1140px) {
+  #responsive-indicator span.max-1140 {display: block }
+  img#mcbase-grid {
+    margin-left: 0;
+    border-left: 0;
+    border-right: 0;
+    left: 0;
+    width: 100%;
+    background-size: contain;
+  }
+}
+
+
 @media screen and (max-width: 980px) {
   #responsive-indicator span.max-980 {display: block }
+  #responsive-indicator span.max-1140 {display: none }
 }
 
 @media screen and (max-width: 800px) {
