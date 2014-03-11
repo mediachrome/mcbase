@@ -18,7 +18,7 @@
     
       $("body").prepend('<img src="' + $grid_image + '" id="mcbase-grid" class="' + $default_state + ' ' + $grid_colour + ' ' + $theme_key + '" />');
       $('body').prepend('<a href="#" id="mcbase-grid-toggle" class="' + $default_state + '">GRID</a>');
-      $('body').prepend('<div id="responsive-indicator"><span class="max-1140">Max 1140</span><span class="max-980">Max 980</span><span class="max-800">Max 800</span><span class="max-768">Max 768</span><span class="max-600">Max 600</span><span class="max-480">Max 480</span><span class="max-320">Max 320</span>');
+      $('body').prepend('<div id="responsive-indicator"><span class="max-1140">Max 1140</span><span class="max-960">Max 960</span><span class="max-800">Max 800</span><span class="max-768">Max 768</span><span class="max-600">Max 600</span><span class="max-480">Max 480</span><span class="max-320">Max 320</span>');
       
       $('#mcbase-grid-toggle').click(function() {
         $('#mcbase-grid, #mcbase-grid-toggle').toggleClass('grid-disabled').toggleClass('grid-enabled');
