@@ -338,17 +338,29 @@ function mcbase_css_alter(&$css) {
  * @return modified form values
  */
 function mcbase_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'search_block_form') {
-    $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
-    $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
-    /* $form['search_block_form']['#size'] = 25; */  // define size of the textfield
-    $form['search_block_form']['#default_value'] = t('Search'); // Set a default value for the textfield
-    $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
-    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search.png');
+  switch ($form_id) {
+    case 'search_block_form' :
+      $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
+      $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
+      /* $form['search_block_form']['#size'] = 25; */  // define size of the textfield
+      $form['search_block_form']['#default_value'] = t('Search'); // Set a default value for the textfield
+      $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
+      $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search.png');
+  
+      // Add extra attributes to the text box
+      $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search'; this.style.color = '#aaaaaa';}";
+      $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = ''; this.style.color = '#000000';}";
+      break;
+  
+  //disable browser autocomplete on password fields
+    case 'user_login_block': // Log-in block form.
+    case 'user_login': // Log-in form.
+      // Username
+      $form['name']['#attributes']['autocomplete'] = 'off';
 
-// Add extra attributes to the text box
-    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search'; this.style.color = '#aaaaaa';}";
-    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = ''; this.style.color = '#000000';}";
+      // Password
+      $form['pass']['#attributes']['autocomplete'] = 'off';
+      break;
   }
 }
 
